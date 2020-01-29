@@ -1,0 +1,252 @@
+/* ------------------- Global ------------------- */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    line-height: 1.5;
+}
+
+h2 {
+    color: hsl(192, 100%, 9%);
+}
+
+p {
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+p, button {
+    font-family: 'Open sans';
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ------------------- Nav bar and Hero ------------------- */
+header {
+    margin-bottom: 100px;
+    background-image: url("images/bg-hero-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    align-content: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.logo {
+    width: 200px;
+    padding: 1rem; 
+}
+
+.nav-btn {
+   padding: 10px 50px; 
+   border: none;
+   border-radius: 20px;
+   background: #fff;
+   box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.nav-btn:hover{
+    color: #fff;
+    background: hsl(322, 100%, 66%);
+    box-shadow: 5px 5px 11px rgba(0,0,0,0.2);
+    transition: .3s;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 100%;
+    width: 600px;
+    padding: 50px 0 150px 0;
+    flex: 1;
+}
+
+.hero-btn {
+    padding: 15px 50px; 
+    border: none;
+    border-radius: 20px;
+    background: hsl(322, 100%, 66%);
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 700;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.hero-btn:hover, .contact-btn:hover {
+    background-color: #fff;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    transition: .3s;
+}
+
+/* -------------------  Cards ------------------- */
+.row {
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px  rgba(0,0,0,0.2);
+}
+
+.row-content {
+    flex: 1;
+    width: 500px;
+    padding: 50px;
+}
+
+.row-content p {
+    color: hsl(208, 11%, 55%);
+}
+
+/* ------------------- Contact -------------------  */
+.contact {
+    background-color: #fff;
+    max-width: 90%;
+    width: 700px;
+    margin: 140px auto -100px;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.contact-btn {
+    padding: 20px 100px; 
+    border: none;
+    border-radius: 50px;
+    background: hsl(322, 100%, 66%);
+    color: #fff;
+    font-weight: 700;
+}
+
+/* -------------------  Footer ------------------- */
+footer {
+    padding: 200px 0 50px 0;
+    background-color: hsl(192, 100%, 9%);
+}
+
+.footer{
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    color: #fff;
+}
+
+.footer-section ul {
+    padding-left: 150px;
+    list-style-type: none;
+}
+
+.footer-section li {
+    margin: 1rem 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "open sans";
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+.footer-section a:hover {
+    color: hsl(322, 100%, 66%);
+    transition: .3s;
+}
+
+.copyright {
+    text-align: right;
+    font-family: 'poppins';
+    font-size: 10px;
+    color: #fff;
+
+}
+
+/* ------------------- Media Queries ------------------- */
+@media screen and (max-width: 767px) {
+
+    .nav-btn{
+        padding: 0 15px;
+        margin-right: 10px;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .row-content {
+        padding: 20px 10px;
+    }
+
+    .footer-section {
+        flex: auto;
+        width: 100%;
+    }
+
+    .footer-section p,.footer-section ul {
+        padding-left: 50px;
+    }
+
+    .copyright {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 468px) {
+    
+    * {
+        line-height: 1.15;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 11rem;
+    }
+
+    .contact-btn {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 8rem 0 1rem 0;
+    }
+
+}
